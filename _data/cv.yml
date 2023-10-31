@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Dimitri Lerévérend
+    # - name: Date of Birth
+    #   value: 14th March 1879
     - name: Languages
-      value: English, German
+      value: French, English
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
       institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      year: 2023-Now
       description:
         - Description 1.
         - Description 2.
@@ -21,12 +21,20 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: Master's degree - M2 SIF
+      institution: École Normale Supérieure, Rennes, France
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Focus on research in informatics
+        - Broad view of multiple informatics research topics
+      link: http://master.irisa.fr/
+
+    - title: Agrégation d'informatique
+      institution: Education Nationale
+      year: 2023
+      description:
+        - Qualification to be a teacher in France
+        - Large view of all the different basic fields of informatics.
 
 - title: Experience
   type: time_table
@@ -68,16 +76,16 @@
       year: 2015-now
       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#     - year: 2029
+#       items: 
+#         - Max Planck Medal
 
 - title: Academic Interests
   type: nested_list
