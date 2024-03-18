@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: "<a href='https://team.inria.fr/wide/'>Inria Rennes</a>. Mail me at: [firstname].[lastname]@inria.fr"
 
@@ -21,11 +21,13 @@ social: false  # includes social icons at the bottom of the page
 I'm a Ph.D student in Computer systems at [INRIA Rennes](https://team.inria.fr/wide/) in Brittany, France. 
 
 I mainly focus on privacy concerns in decentralized federated learning. 
+For now, I am mostly specializing in decentralized learning convergence proofs as well as privacy proofs.
 
 ---
 ## Researchs interest
 * Machine learning
 * Distributed systems
+* Privacy
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
