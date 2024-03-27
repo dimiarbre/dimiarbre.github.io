@@ -24,7 +24,7 @@ I mainly focus on privacy concerns in decentralized federated learning.
 For now, I am mostly specializing in decentralized learning convergence proofs as well as privacy proofs.
 
 ---
-## Researchs interest
+## Researchs Interests
 * Machine learning
 * Distributed systems
 * Privacy
