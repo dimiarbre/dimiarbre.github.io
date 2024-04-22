@@ -19,6 +19,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 I'm a Ph.D student in Computer systems at [INRIA Rennes](https://team.inria.fr/wide/) in Brittany, France. 
+I'm part of both the [WIDE](https://team.inria.fr/wide/) and [LACODAM](https://team.inria.fr/lacodam/) team.
 
 I mainly focus on privacy concerns in decentralized federated learning. 
 For now, I am mostly specializing in decentralized learning convergence proofs as well as privacy proofs.
