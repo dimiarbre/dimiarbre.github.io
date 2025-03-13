@@ -23,6 +23,7 @@ This class is divided in three parts: privacy, explainable AI, and attacks on AI
 A course aimed at first years (L1 ISTN) about computational complexity, mainly taught in JAVA.
 I gave a practical class, playing around with different basic algorithms to showcase how the complexity of an algorithm will influence real-time executions. The class consisted mostly of these practical sessions, in order to let the students play around with the algorithms and gain insight on what influences the complexity. 
 
+---
 # 2023-2024
 I mainly teach two modules at the [university of Rennes](https://istic.univ-rennes.fr/).
 
