@@ -9,7 +9,7 @@ nav_order: 6
 # 2024-2025
 ## Privacy
 A course aimed at Master 1 students at the Cyberschool in Rennes.
-This course explores different ways to keep track and keep privacy in 
+This course explores different ways to keep track and keep privacy in various systems.
 
 During this course, I also designed and gave the students a class about Local Differential Privacy and its possible applications, along with a practical session.
 
