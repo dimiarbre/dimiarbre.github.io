@@ -411,8 +411,13 @@ ninja.data = [{
           section: "News",},{id: "news-my-paper-was-accepted-to-pets-fire",
           title: 'My paper was accepted to PETS :fire:',
           description: "",
-          section: "News",},{id: "news-i-ll-be-going-to-epfl-for-a-3-months-internship-from-may-05-to-july-the-31st",
-          title: 'I’ll be going to EPFL for a 3 months internship, from May 05...',
+          section: "News",},{id: "news-going-to-epfl-from-may-to-july-2025",
+          title: 'Going to EPFL from May to July 2025.',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/going_to_lausanne/";
+            },},{id: "news-i-ll-be-going-to-pets-2025-from-14th-18th-of-july-2025-to-present-my-work",
+          title: 'I’ll be going to PETS 2025 from 14th-18th of July 2025 to present...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
