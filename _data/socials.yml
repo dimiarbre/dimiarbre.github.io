@@ -21,10 +21,10 @@ github_username: dimiarbre # your GitHub user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-# linkedin_username: # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 orcid_id: 0009-0007-1813-2799 # your ORCID ID
+linkedin_username: dimiarbre # your LinkedIn user name
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
