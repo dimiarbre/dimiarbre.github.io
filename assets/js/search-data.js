@@ -465,6 +465,13 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=M3t_dc0AAAAJ", "_blank");
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
@@ -472,11 +479,11 @@ ninja.data = [{
           window.open("https://github.com/dimiarbre", "_blank");
         },
       },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
+        id: 'social-orcid',
+        title: 'ORCID',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=M3t_dc0AAAAJ", "_blank");
+          window.open("https://orcid.org/0009-0007-1813-2799", "_blank");
         },
       },{
       id: 'light-theme',
