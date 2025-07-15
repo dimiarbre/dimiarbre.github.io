@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My [paper](https://arxiv.org/abs/2403.11795) was accepted to [PETS](https://petsymposium.org/) :fire:
+My [paper](https://petsymposium.org/popets/2025/popets-2025-0108.php) was accepted at [PETS](https://petsymposium.org/) :fire:
