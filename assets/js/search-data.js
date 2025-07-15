@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-news",
+          title: "News",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
         },{id: "post-a-post-with-image-galleries",
         
           title: "a post with image galleries",
@@ -408,8 +415,8 @@ ninja.data = [{
             },},{id: "news-just-started-my-phd-sparkles",
           title: 'Just started my PhD! :sparkles:',
           description: "",
-          section: "News",},{id: "news-my-paper-was-accepted-to-pets-fire",
-          title: 'My paper was accepted to PETS :fire:',
+          section: "News",},{id: "news-my-paper-was-accepted-at-pets-fire",
+          title: 'My paper was accepted at PETS :fire:',
           description: "",
           section: "News",},{id: "news-going-to-epfl-from-may-to-july-2025",
           title: 'Going to EPFL from May to July 2025.',
@@ -418,6 +425,12 @@ ninja.data = [{
               window.location.href = "/news/going_to_lausanne/";
             },},{id: "news-i-ll-be-going-to-pets-2025-from-14th-18th-of-july-2025-to-present-my-work",
           title: 'I’ll be going to PETS 2025 from 14th-18th of July 2025 to present...',
+          description: "",
+          section: "News",},{id: "news-presented-my-work-in-lyon-at-a-federated-learning-seminar-organized-by-the-fil",
+          title: 'Presented my work in Lyon at a Federated learning seminar, organized by the...',
+          description: "",
+          section: "News",},{id: "news-presented-my-work-at-pets-2025-rocket",
+          title: 'Presented my work at PETS 2025 :rocket:.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
