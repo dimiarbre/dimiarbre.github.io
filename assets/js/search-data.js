@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "post-a-post-with-image-galleries",
+        },{id: "post-a-post-with-plotly-js",
+        
+          title: "a post with plotly.js",
+        
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/plotly/";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
         
           title: "a post with image galleries",
         
@@ -432,7 +443,12 @@ ninja.data = [{
           section: "News",},{id: "news-presented-my-work-at-pets-2025-rocket",
           title: 'Presented my work at PETS 2025 :rocket:.',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-going-to-eurips-2025-in-copenhagen",
+          title: 'Going to EURIPS 2025 in Copenhagen.',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/eurips_2025/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
