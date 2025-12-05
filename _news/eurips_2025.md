@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2025-12-03 --- 2025-12-07
+date: 2025-12-03
 inline: false
 related_posts: true
 title: Going to EURIPS 2025 in Copenhagen.
