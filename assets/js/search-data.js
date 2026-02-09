@@ -448,7 +448,19 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/eurips_2025/";
-            },},{id: "projects-project-1",
+            },},{id: "news-going-to-paris-to-present-my-work-at-young-statisticians-and-probabilists-days-tada",
+          title: 'Going to Paris to present my work at Young Statisticians and Probabilists days...',
+          description: "",
+          section: "News",},{id: "news-deligthed-to-share-that-my-work-unified-privacy-guarantees-for-decentralized-learning-via-matrix-factorization-has-been-accepted-at-iclr-2026-see-you-in-rio-airplane",
+          title: 'Deligthed to share that my work Unified Privacy Guarantees for Decentralized Learning via...',
+          description: "",
+          section: "News",},{id: "news-going-to-trans-numériques-2026-in-rennes-to-present-my-work-unified-privacy-guarantees-for-decentralized-learning-via-matrix-factorization",
+          title: 'Going to Trans Numériques 2026 in Rennes to present my work Unified Privacy...',
+          description: "",
+          section: "News",},{id: "news-added-a-new-preprint-on-arxiv-mosaic-learning-this-was-a-collaboration-with-the-sacs-lab-at-epfl",
+          title: 'Added a new preprint on arXiv Mosaic Learning! This was a collaboration with...',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
