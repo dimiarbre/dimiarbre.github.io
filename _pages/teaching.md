@@ -5,6 +5,7 @@ title: Teaching
 # description: A list of the different courses I taught in.
 nav: true
 nav_order: 6
+calendar: true
 ---
 # 2024-2025
 ## Privacy
