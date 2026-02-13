@@ -14,7 +14,6 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: academic-website, research-website  # add your own keywords or leave empty
-
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: Eye_Symbol_circled.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
