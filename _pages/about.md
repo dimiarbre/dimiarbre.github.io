@@ -6,7 +6,7 @@ subtitle: "<a href='https://team.inria.fr/wide/'>Inria Rennes</a>. Mail me at: [
 
 profile:
   align: right
-  image: Eye_Symbol.png
+  image: my_photo.png
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>Campus de Beaulieu, 263 Av. Général Leclerc</p>
