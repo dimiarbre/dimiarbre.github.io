@@ -27,7 +27,8 @@ latest_posts:
 
 ---
 
-I'm a Ph.D student in Computer systems at [INRIA Rennes](https://team.inria.fr/wide/) in Brittany, France. 
+I'm a Ph.D student in Computer systems at [INRIA Rennes](https://team.inria.fr/wide/) in Brittany, France.
+My supervisors is the amazing team of [Davide Frey](https://people.irisa.fr/Davide.Frey/), [Romaric Gaudel](https://sites.google.com/site/romaricgaudel/) and [François Taïani](https://ftaiani.ouvaton.org/index.html).
 I'm part of both the [WIDE](https://team.inria.fr/wide/) and [MALT](https://team.inria.fr/malt/) team.
 
 I mainly focus on privacy concerns in decentralized federated learning. 
