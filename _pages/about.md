@@ -31,8 +31,8 @@ I'm a Ph.D student in Computer systems at [INRIA Rennes](https://team.inria.fr/w
 My supervisors is the amazing team of [Davide Frey](https://people.irisa.fr/Davide.Frey/), [Romaric Gaudel](https://sites.google.com/site/romaricgaudel/) and [François Taïani](https://ftaiani.ouvaton.org/index.html).
 I'm part of both the [WIDE](https://team.inria.fr/wide/) and [MALT](https://team.inria.fr/malt/) team.
 
-I mainly focus on privacy concerns in decentralized federated learning. 
-For now, I am mostly specializing in decentralized learning convergence proofs as well as privacy proofs.
+I mainly focus on privacy concerns in decentralized federated learning, using correlated noise to achieve differential privacy, in order to obtain theoretical guarantees of privacy.
+I also have a strong intereset in the convergence guarantees of those same systems through decentralized learning convergence proofs.
 
 ---
 ## Researchs Interests
