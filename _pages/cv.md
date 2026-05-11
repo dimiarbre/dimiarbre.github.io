@@ -5,9 +5,9 @@ title: CV
 nav: true
 nav_order: 4
 cv_pdf: assets/pdf/cv_lereverend_dimitri.pdf
-# cv_format: rendercv # options: rendercv, jsonresume
+cv_format: rendercv # options: rendercv, jsonresume
 # description: This is a description of the page. You can modify it in 'pages/_cv.md'. You can also change or remove the top pdf download button.
-description: Here is a brief summary of my professional experience. 
+description: Here is a brief summary of my professional experience. You can download the full PDF on the top right of this page. 
 toc:
   sidebar: left
 ---

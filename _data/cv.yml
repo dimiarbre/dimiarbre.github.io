@@ -1,10 +1,14 @@
 cv:
   name: Dimitri Lerévérend
-  label: Phd. Student
+  label: Ph.D. Student in Privacy-Preserving Decentralized Learning
   email: dimitri.lereverend@inria.fr
   location: Rennes, France
-  image: ""
-  summary: A french Ph.D. student working on Privacy and Decentralized Learning
+  image: "assets/img/my_photo.png"
+  summary: >
+    I am a Ph.D. student in privacy-preserving decentralized learning at INRIA Rennes.
+    My research focuses on privacy techniques for decentralized learning, with a particular
+    emphasis on noise correlation. I work on both theory and practice to design approaches
+    that are scalable, tractable, and supported by strong privacy guarantees.
 
   social_networks:
     # - network: X
@@ -23,28 +27,89 @@ cv:
 
   sections:
     Education:
-      - institution: Inria, University of Rennes
+      - institution: INRIA Rennes
         location: Rennes, France
-        # url: https://www.uzh.ch/
-        area: Computer Sciences
-        studyType: PhD
+        studyType: Ph.D. in Computer Science
         start_date: 2023
-        end_date: Now
-        score: ""
-        courses: "Privacy preserving Decentralized learning with correlated noises."
-        # highlights:
-        #   - Description 1.
-        #   - Description 2.
+        end_date: present
+        highlights:
+          - "Advisors: Davide Frey, Romaric Gaudel, François Taïani"
+          - "Exploring privacy in decentralized learning via noise correlation, from theoretical foundations to practical methods."
 
       - institution: ENS Rennes
         location: Rennes, France
-        area: Computer Sciences
-        studyType: Master's degree
-        start_date: 2019
+        studyType: "Master's degree (M2 SIF) in Computer Science"
+        start_date: 2022
         end_date: 2023
-        # highlights:
-        #   - Description 1.
-        #   - Description 2.
+        highlights:
+          - "Focus on machine learning, image representation, and complex systems."
+
+      - institution: ENS Rennes
+        location: Rennes, France
+        studyType: 'Preparation for the "Agrégation d''informatique"'
+        start_date: 2021
+        end_date: 2022
+        highlights:
+          - "Focus on teaching and computer science fundamentals: algorithms, architecture, operating systems, networking, and databases."
+
+      - institution: École Normale Supérieure de Rennes
+        location: Rennes, France
+        studyType: "Bachelor's degree in Computer Science"
+        start_date: 2019
+        end_date: 2020
+
+    Experience:
+      - company: INRIA Rennes
+        position: Ph.D. Student
+        location: Rennes, France
+        start_date: 2023
+        end_date: present
+        summary: "Supervisors: Davide Frey, Romaric Gaudel, François Taïani"
+        highlights:
+          - "Conducting research on decentralized learning privacy and collaborating with researchers across multiple institutions."
+
+      - company: "Sacs Lab, EPFL"
+        position: Research Intern
+        location: Lausanne, Switzerland
+        start_date: 2025
+        end_date: 2025
+        summary: "Decentralized learning convergence under fragmentation. Supervisor: Anne-Marie Kermarrec"
+        highlights:
+          - "Studied theoretical convergence rates of decentralized learning with model fragmentation."
+
+      - company: "Team WIDE, INRIA Rennes"
+        position: Research Intern
+        location: Rennes, France
+        start_date: 2023
+        end_date: 2023
+        summary: "Privacy protection through private averaging. Supervisors: Davide Frey, François Taïani, Romaric Gaudel"
+        highlights:
+          - "Studied privacy properties of decentralized machine learning and the effects of private averaging using PyTorch."
+
+      - company: "D7, IRISA Rennes"
+        position: Research Intern
+        location: Rennes, France
+        start_date: 2021
+        end_date: 2021
+        summary: "Adapting Public Announcement Logic update mechanisms to Dynamic Epistemic Logic. Supervisor: Guillaume Aucher"
+
+      - company: "Percept, INRIA Rennes"
+        position: Research Project
+        location: Rennes, France
+        start_date: 2020
+        end_date: 2021
+        summary: "Feature extraction for high dynamic range images. Supervisors: Olivier Le Meur, Mathieu Chambe"
+        highlights:
+          - "Built a neural network for HDR image feature extraction in TensorFlow."
+
+      - company: "Mnemosyne, INRIA Bordeaux"
+        position: Research Intern
+        location: Bordeaux, France
+        start_date: 2020
+        end_date: 2020
+        summary: "Visualization of echo state networks. Supervisor: Nicolas Rougier"
+        highlights:
+          - "Developed a spatialized ESN and visualized activity using Voronoi diagrams."
 
     # Experience:
     #   - company: Institute for Advanced Study, Princeton University
@@ -136,6 +201,74 @@ cv:
     #     url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
     #     summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
 
+    Publications:
+      - title: "Unified privacy guarantees for decentralized learning via matrix factorization"
+        date: 2026
+        publisher: "International Conference on Learning Representations (ICLR 2026)"
+        url: https://iclr.cc/virtual/2026/poster/10010197
+        summary: "Aurélien Bellet, Edwige Cyffers, Davide Frey, Romaric Gaudel, **Dimitri Lerévérend**\\*, and François Taïani."
+
+      - title: "Low-Cost Privacy-Preserving Decentralized Learning"
+        date: 2025
+        publisher: "Proceedings on Privacy Enhancing Technologies (PETs), 2025(3):451–474"
+        url: https://petsymposium.org/popets/2025/popets-2025-0108.php
+        summary: "Sayan Biswas, Davide Frey, Romaric Gaudel, Anne-Marie Kermarrec, **Dimitri Lerévérend**\\*, Rafael Pires, Rishi Sharma, and François Taïani."
+
+      - title: "Mosaic Learning: A Framework for Decentralized Learning with Model Fragmentation"
+        date: 2026
+        publisher: "arXiv:2602.04352"
+        url: https://arxiv.org/abs/2602.04352
+        summary: "Sayan Biswas, Davide Frey, Romaric Gaudel, Nirupam Gupta, Anne-Marie Kermarrec, **Dimitri Lerévérend**, Rafael Pires, Rishi Sharma, François Taïani, and Martijn de Vos."
+
+    Certificates:
+      - name: "Master's degree"
+        date: 2023
+        issuer: University of Rennes
+
+      - name: "Agrégation d'informatique (Ranked 2nd)"
+        date: 2023
+        issuer: French national education
+
+    Teaching:
+      - label: "2024–2026: PRI, M1, Cyberschool"
+        details: "Course presenting privacy formally."
+      - label: "2024–2026: Agrégation preparation, M1, ENS Rennes"
+        details: 'Course preparing students for the "Agrégation d''informatique", the national exam for teaching computer science in France.'
+      - label: "2025–2026: ISE, L1, Cyberschool"
+        details: "Basic introduction to security with a mini-project."
+      - label: "2023–2025: ACE, L1, ISTIC"
+        details: "Course explaining algorithm complexity practically."
+      - label: "2024–2025: Trustworthy AI, M1, Master IA"
+        details: "Course introducing trustworthy AI: privacy and explainability."
+      - label: "2023–2024: BDD, L2, ISTIC"
+        details: "Course presenting databases."
+
+    Presentations:
+      - label: "2026: ICLR"
+        details: "Poster Presentation, Rio"
+      - label: "2026: Transnumériques"
+        details: "Oral Presentation, Rennes"
+      - label: "2026: YSP"
+        details: "Oral Presentation, Paris"
+      - label: "2025: EurIPS"
+        details: "Workshop Presentation, Copenhagen"
+
+    Skills:
+      - name: "Programming Languages"
+        keywords:
+          - Python
+          - OCaml
+          - C
+          - C++
+          - Java
+      - name: Libraries
+        keywords:
+          - scikit-learn
+          - TensorFlow
+          - PyTorch
+          - pandas
+          - NumPy
+
     # Skills:
     #   - name: Physics
     #     level: Master
@@ -149,6 +282,9 @@ cv:
       - name: English
         summary: "Fluent"
 
+    References:
+      - name: Upon request
+        reference: Email me if you require a list of references.
     # Interests:
     #   - name: Physics
     #     icon: fa-solid fa-tag
