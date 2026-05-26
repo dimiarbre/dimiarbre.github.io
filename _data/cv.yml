@@ -220,6 +220,12 @@ cv:
         url: https://arxiv.org/abs/2602.04352
         summary: "Sayan Biswas, Davide Frey, Romaric Gaudel, Nirupam Gupta, Anne-Marie Kermarrec, **Dimitri Lerévérend**, Rafael Pires, Rishi Sharma, François Taïani, and Martijn de Vos."
 
+      - title: "Your Neighbors Know: Leveraging Local Neighborhoods for Backdoor Detection in Decentralized Learning"
+        date: 2026
+        publisher: "arXiv:2605.19969"
+        url: https://arxiv.org/abs/2605.19969
+        summary: "Sayan Biswas, Antoine Boutet, Davide Frey, Romaric Gaudel, Rachid Guerraoui, Maxime Jacovella, Anne-Marie Kermarrec, **Dimitri Lerévérend**, François Taïani, and Martijn de Vos."
+
     Certificates:
       - name: "Master's degree"
         date: 2023
