@@ -12,7 +12,6 @@ I'll also be presenting my work 'Unified Privacy Guarantees for Decentralized Le
 
 You can find the full paper [here](https://arxiv.org/abs/2510.17480), and here is the [poster](/assets/pdf/mafalda_poster.pdf) if you want to check it out!
 
-
 <div class="post-poster">
   <embed src="/assets/pdf/mafalda_poster.pdf" type="application/pdf" width="100%" height="700" />
 </div>

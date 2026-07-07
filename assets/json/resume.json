@@ -25,9 +25,7 @@
       "startDate": "2023-10-01",
       "endDate": "now",
       "summary": "",
-      "highlights": [
-        "Preserving privacy in Decentralized Learning"
-      ]
+      "highlights": ["Preserving privacy in Decentralized Learning"]
     }
   ],
   "education": [
@@ -39,10 +37,7 @@
       "startDate": "2019-09-01",
       "endDate": "2023-08-31",
       "score": "",
-      "courses": [
-        "Focus on research in informatics",
-        "Broad view of multiple informatics research topics"
-      ]
+      "courses": ["Focus on research in informatics", "Broad view of multiple informatics research topics"]
     }
   ],
   "certificates": [
@@ -51,7 +46,7 @@
       "date": "2023-07-06",
       "issuer": "Éducation nationale",
       "url": "https://agreg-info.org/"
-      }
+    }
   ],
   "publications": [],
   "skills": [],

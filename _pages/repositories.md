@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: Repositories
 description: A link to my github profiles and some select repositories.
-# Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories. Put the rebo_trophy to `enabled` in `_config.yaml` to display back the trophies. 
+# Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories. Put the rebo_trophy to `enabled` in `_config.yaml` to display back the trophies.
 nav: true
 nav_order: 3
 ---
