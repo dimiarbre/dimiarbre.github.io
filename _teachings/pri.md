@@ -1,7 +1,7 @@
 ---
 layout: course
-title: Privacy
-course_id: privacy
+title: Privacy (PRI)
+course_id: pri
 year: 2026
 years: "2024-2026"
 order: 1

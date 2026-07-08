@@ -1,6 +1,6 @@
 ---
 layout: course
-title: BDD - Bases de Données
+title: Databases (BDD)
 course_id: bdd
 year: 2024
 years: "2023-2024"

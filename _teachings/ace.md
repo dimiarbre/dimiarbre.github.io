@@ -1,6 +1,6 @@
 ---
 layout: course
-title: Algorithmes et Complexité Expérimentales (ACE)
+title: Algorithms and Experimental Complexity (ACE)
 course_id: ace
 year: 2025
 years: "2023-2025"
