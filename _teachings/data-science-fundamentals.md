@@ -1,5 +1,6 @@
 ---
 layout: course
+published: false # example file kept for reference, not a real course - excluded from site.teachings and build output
 title: Data Science Fundamentals
 description: This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
 instructor: Prof. Data

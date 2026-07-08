@@ -1,5 +1,6 @@
 ---
 layout: course
+published: false # example file kept for reference, not a real course - excluded from site.teachings and build output
 title: Introduction to Machine Learning
 description: This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.
 instructor: Prof. Example
