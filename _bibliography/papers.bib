@@ -11,7 +11,7 @@
   selected    = {true},
   bibtex_show = {true},
   url         = {https://openreview.net/forum?id=JTUOGo7NFD},
-  html        = {https://openreview.net/forum?id=JTUOGo7NFD},
+  paper       = {https://openreview.net/forum?id=JTUOGo7NFD},
   poster      = {mafalda_poster.pdf},
   abbr        = {ICLR},
   preview     = {mafalda_summary_main_figure.png},
@@ -33,7 +33,7 @@
   urldate     = {2025-05-20},
   abstract    = {This paper introduces ZIP-DL, a novel privacy-aware decentralized learning (DL) algorithm that relies on adding correlated noise to each model update during the model training process. This technique ensures that the added noise almost neutralizes itself during the aggregation process due to its correlation, thus minimizing the impact on model accuracy. In addition, ZIP-DL does not require multiple communication rounds for noise cancellation, addressing the common trade-off between privacy protection and communication overhead. We provide theoretical guarantees for both convergence speed and privacy guarantees, thereby making ZIP-DL applicable to practical scenarios. Our extensive experimental study shows that ZIP-DL achieves the best trade-off between vulnerability and accuracy. In particular, ZIP-DL (i) reduces the effectiveness of a linkability attack by up to 52 points compared to baseline DL, and (ii) achieves up to 37 more accuracy points for the same vulnerability under membership inference attacks against a privacy-preserving competitor},
   url         = {https://petsymposium.org/popets/2025/popets-2025-0108.php},
-  html        = {https://petsymposium.org/popets/2025/popets-2025-0108.php},
+  paper       = {https://petsymposium.org/popets/2025/popets-2025-0108.php},
   keywords    = {Decentralized learning, Differential privacy, Correlated noises},
   selected    = {true},
   bibtex_show = {true},
@@ -46,11 +46,12 @@
   author={Biswas, Sayan and Boutet, Antoine and Frey, Davide and Gaudel, Romaric and Guerraoui, Rachid and Jacovella, Maxime and Kermarrec, Anne-Marie and Ler{\'e}v{\'e}rend, Dimitri and Ta{\"\i}ani, Fran{\c{c}}ois and de Vos, Martijn},
   journal={arXiv preprint arXiv:2605.19969},
   year={2026},
+  abstract={Decentralized learning (DL) is an emerging machine learning paradigm where nodes collaboratively train models without a central server. However, the collaborative nature of DL makes it vulnerable to backdoor attacks, where a model is taught to behave normally on standard inputs while executing hidden, malicious actions when encountering data with specific triggers. Backdoor attacks in DL remain understudied and existing defenses often overlook DL constraints. We introduce Argus, a novel backdoor detection framework native to DL that requires neither a central coordinator nor prior knowledge of the trigger. In Argus, honest nodes locally analyze received model updates to identify potential backdoor triggers. Nodes then collectively share their triggers with their neighbors and use a structural similarity metric to separate true backdoors from false alarms induced by data heterogeneity. A key insight is that false positive triggers exhibit inconsistencies across participants while true positive ones show consistent patterns. Model updates that fail this collaborative test are rejected, and persistently malicious senders are eventually evicted. We provide the first theoretical convergence guarantees for a DL-specific backdoor detection mechanism, showing that filtering out suspicious model updates with high probability preserves a convergence rate comparable to standard DL. We implement and evaluate Argus on three standard datasets and against three state-of-the-art baselines. Across settings, Argus reduces attack success rates by up to 90 points compared to no defense, while preserving model utility within 5 percentage points of an omniscient oracle. Furthermore, the effectiveness of Argus compared to baselines improves as data heterogeneity increases.},
   selected      = {true},
   bibtex_show   = {true},
   abbr          = {arXiv},
   url           = {https://arxiv.org/abs/2605.19969},
-  html          = {https://arxiv.org/abs/2605.19969},
+  paper         = {https://arxiv.org/abs/2605.19969},
   preview       = {argus.png}
 }
 
@@ -74,6 +75,6 @@
   bibtex_show   = {true},
   abbr          = {arXiv},
   url           = {https://arxiv.org/abs/2602.04352},
-  html          = {https://arxiv.org/abs/2602.04352},
+  paper         = {https://arxiv.org/abs/2602.04352},
   preview       = {mosaic_learning.png}
 }

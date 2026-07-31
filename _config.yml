@@ -358,7 +358,10 @@ scholar:
   join_strings: true
 
   details_dir: bibliography
-  details_link: Details
+  # details_layout defaults to bibtex.html (see _layouts/bibtex.html)
+  # The title is already linked to the details page (see _layouts/bib.liquid),
+  # so disable jekyll-scholar's own auto-appended "Details" link to avoid a duplicate.
+  details_link: false
 
   query: "@*"
   group_by: year

@@ -1,0 +1,212 @@
+---
+layout: default
+---
+
+<style>
+  /* This page isn't inside .publications ol.bibliography li, so it doesn't
+     inherit the theme's .links a.btn styling - define a bigger version here. */
+  .paper-details .links a.btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding: 0.6rem 1.5rem;
+    margin: 0.25rem;
+    font-size: 1.15rem;
+    display: inline-block;
+  }
+  .paper-details .links a.btn:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+  }
+  .paper-details .links a.award.btn {
+    border-color: var(--global-highlight-color);
+  }
+</style>
+
+<div class="post paper-details">
+  <header class="post-header text-center">
+    {% if page.entry.abbr %}
+      {% if site.data.venues[page.entry.abbr] %}
+        {% assign venue_style = null %}
+        {% if site.data.venues[page.entry.abbr].color != blank %}
+          {% assign venue_style = site.data.venues[page.entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+        {% endif %}
+        <abbr class="badge rounded" {% if venue_style %}{{ venue_style }}{% endif %}>
+          {% if site.data.venues[page.entry.abbr].url %}
+            <a href="{{ site.data.venues[page.entry.abbr].url }}">{{ page.entry.abbr }}</a>
+          {% else %}
+            <div>{{- page.entry.abbr -}}</div>
+          {% endif %}
+        </abbr>
+      {% else %}
+        <abbr class="badge rounded">{{ page.entry.abbr }}</abbr>
+      {% endif %}
+    {% endif %}
+
+    <h1 class="post-title">{{ page.entry.title }}</h1>
+
+    <p class="post-description">
+      {% assign author_array_size = page.entry.author_array | size %}
+      {%- for author in page.entry.author_array -%}
+        {% assign author_is_self = false %}
+        {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {% if site.scholar.last_name contains author_last_name %}
+          {% if site.scholar.first_name contains author.first %}
+            {% assign author_is_self = true %}
+          {% endif %}
+        {%- endif -%}
+        {% assign coauthor_url = null %}
+        {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+        {% if site.data.coauthors[clean_last_name] %}
+          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+            {% if coauthor.firstname contains author.first %}
+              {%- assign coauthor_url = coauthor.url -%}
+              {% break %}
+            {%- endif -%}
+          {% endfor %}
+        {%- endif -%}
+
+        {%- if forloop.first == false -%}
+          {%- if forloop.last %} and {% else %}, {% endif -%}
+        {%- endif -%}
+        {%- if author_is_self -%}
+          <em>{{- author.first }} {{ author_last_html -}}</em>
+        {%- else -%}
+          {%- if coauthor_url -%}
+            <a href="{{ coauthor_url }}">{{- author.first }} {{ author_last_html -}}</a>
+          {%- else -%}
+            {{- author.first }} {{ author_last_html -}}
+          {% endif %}
+        {%- endif -%}
+      {% endfor %}
+    </p>
+
+    <p class="post-description">
+      {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
+      {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
+      {% if page.entry.type == 'article' %}
+        <em>{{ page.entry.journal }}</em>
+      {% elsif proceedings contains page.entry.type %}
+        <em>In {{ page.entry.booktitle }}</em>
+      {% elsif thesis contains page.entry.type %}
+        <em>{{ page.entry.school }}</em>
+      {% endif %}
+      {% if page.entry.month %}{{ page.entry.month | capitalize }}{% endif %}
+      {{ page.entry.year }}
+    </p>
+  </header>
+
+  <article>
+    {% if page.entry.preview %}
+      <div class="text-center mb-4">
+        {% if page.entry.preview contains '://' %}
+          <img class="preview z-depth-1 rounded mx-auto d-block" style="max-width: 100%; width: 550px;" src="{{ page.entry.preview }}">
+        {% else %}
+          {% assign entry_path = page.entry.preview | prepend: '/assets/img/publication_preview/' %}
+          {%
+            include figure.liquid
+            path=entry_path
+            sizes="550px"
+            class="preview z-depth-1 rounded mx-auto d-block"
+            max-width="550px"
+            zoomable=true
+            alt=page.entry.preview
+          %}
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="links text-center mb-4">
+      {% if page.entry.award %}
+        <a class="award btn btn-sm z-depth-0" role="button">
+          {%- if page.entry.award_name %}{{ page.entry.award_name }}{% else %}Awarded{% endif -%}
+        </a>
+      {% endif %}
+      {% if page.entry.doi %}
+        <a href="https://doi.org/{{ page.entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+      {% endif %}
+      {% if page.entry.arxiv %}
+        <a href="http://arxiv.org/abs/{{ page.entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+      {% endif %}
+      {% if page.entry.hal %}
+        <a href="https://hal.science/{{ page.entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
+      {% endif %}
+      {% if page.entry.paper %}
+        {% if page.entry.paper contains '://' %}
+          <a href="{{ page.entry.paper }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+        {% else %}
+          <a href="{{ page.entry.paper | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+        {% endif %}
+      {% endif %}
+      {% if page.entry.html %}
+        {% if page.entry.html contains '://' %}
+          <a href="{{ page.entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        {% else %}
+          <a href="{{ page.entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        {% endif %}
+      {% endif %}
+      {% if page.entry.pdf %}
+        {% if page.entry.pdf contains '://' %}
+          <a href="{{ page.entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {% else %}
+          <a href="{{ page.entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {% endif %}
+      {% endif %}
+      {% if page.entry.supp %}
+        {% if page.entry.supp contains '://' %}
+          <a href="{{ page.entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+        {% else %}
+          <a href="{{ page.entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+        {% endif %}
+      {% endif %}
+      {% if page.entry.video and site.enable_video_embedding %}
+        <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
+      {% elsif page.entry.video %}
+        <a href="{{ page.entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+      {% endif %}
+      {% if page.entry.blog %}
+        <a href="{{ page.entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+      {% endif %}
+      {% if page.entry.code %}
+        <a href="{{ page.entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+      {% endif %}
+      {% if page.entry.poster %}
+        {% if page.entry.poster contains '://' %}
+          <a href="{{ page.entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+        {% else %}
+          <a href="{{ page.entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+        {% endif %}
+      {% endif %}
+      {% if page.entry.slides %}
+        {% if page.entry.slides contains '://' %}
+          <a href="{{ page.entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        {% else %}
+          <a href="{{ page.entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        {% endif %}
+      {% endif %}
+      {% if page.entry.website %}
+        <a href="{{ page.entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+    </div>
+
+    {% if page.entry.video and site.enable_video_embedding %}
+      <div style="text-align: center;" class="mb-4">
+        {% include video.liquid path=page.entry.video class="img-fluid rounded z-depth-1" controls=true %}
+      </div>
+    {% endif %}
+
+    {% if page.entry.abstract %}
+      <h2>Abstract</h2>
+      <p>{{ page.entry.abstract }}</p>
+    {% endif %}
+
+    <h2>BibTeX</h2>
+    <div class="bibtex">
+      {% highlight bibtex %}
+      {{- page.entry.bibtex | hideCustomBibtex -}}
+      {% endhighlight %}
+    </div>
+
+    <p><a href="{{ '/publications/' | relative_url }}">&larr; Back to publications</a></p>
+  </article>
+</div>
