@@ -20,9 +20,26 @@ layout: default
   .paper-details .links a.award.btn {
     border-color: var(--global-highlight-color);
   }
+  /* Smaller, subdued nav link back to the publications list - not a CTA,
+     so it shouldn't compete visually with the title or the paper links. */
+  .paper-details .back-link a.btn {
+    color: var(--global-text-color-light);
+    border: 1px solid var(--global-text-color-light);
+    padding: 0.3rem 0.9rem;
+    font-size: 0.9rem;
+    display: inline-block;
+  }
+  .paper-details .back-link a.btn:hover {
+    color: var(--global-text-color);
+    border-color: var(--global-text-color);
+  }
 </style>
 
 <div class="post paper-details">
+  <p class="back-link mb-3">
+    <a href="{{ '/publications/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">&larr; Back to publications</a>
+  </p>
+
   <header class="post-header text-center">
     {% if page.entry.abbr %}
       {% if site.data.venues[page.entry.abbr] %}
@@ -207,6 +224,6 @@ layout: default
       {% endhighlight %}
     </div>
 
-    <p><a href="{{ '/publications/' | relative_url }}">&larr; Back to publications</a></p>
+    <p class="back-link"><a href="{{ '/publications/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">&larr; Back to publications</a></p>
   </article>
 </div>
