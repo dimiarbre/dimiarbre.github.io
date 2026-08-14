@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-03'
+  last_updated: '2026-08-14'
 papers:
   M3t_dc0AAAAJ:2osOgNQ5qMEC:
     citations: 2
@@ -14,6 +14,6 @@ papers:
     title: 'Your Neighbors Know: Leveraging Local Neighborhoods for Backdoor Detection in Decentralized Learning'
     year: '2026'
   M3t_dc0AAAAJ:qjMakFHDy7sC:
-    citations: 0
+    citations: 1
     title: 'Mosaic Learning: A Framework for Decentralized Learning with Model Fragmentation'
     year: '2026'
