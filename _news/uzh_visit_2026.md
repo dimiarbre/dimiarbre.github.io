@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-On October 7th, I'll be at UZH in Zurich to present my work in Anastasia Koloskova's group.
+On October 7th, I'll be at [UZH](https://www.uzh.ch/) in Zurich to present my work in [Anastasia Koloskova](https://koloskova.github.io/)'s group.

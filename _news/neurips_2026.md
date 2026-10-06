@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [Your Neighbors Know: Leveraging Local Neighborhoods for Backdoor Detection in Decentralized Learning](https://arxiv.org/abs/2605.19969) got accepted at NeurIPS 2026 :tada:
+Our paper [Your Neighbors Know: Leveraging Local Neighborhoods for Backdoor Detection in Decentralized Learning](https://arxiv.org/abs/2605.19969) got accepted at [NeurIPS 2026](https://neurips.cc/) :tada:
