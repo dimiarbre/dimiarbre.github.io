@@ -18,3 +18,6 @@ vendor
 
 misc/
 my_documents
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc
