@@ -6,9 +6,9 @@ cv:
   image: "assets/img/my_photo.png"
   summary: >
     I am a Ph.D. student in privacy-preserving decentralized learning at INRIA Rennes.
-    My research focuses on privacy techniques for decentralized learning, with a particular
+    My research focuses on differential privacy (DP) for decentralized learning, with a particular
     emphasis on noise correlation. I work on both theory and practice to design approaches
-    that are scalable, tractable, and supported by strong privacy guarantees.
+    that are scalable, tractable, and supported by strong DP guarantees.
 
   social_networks:
     # - network: X
@@ -34,7 +34,7 @@ cv:
         end_date: present
         highlights:
           - "Advisors: Davide Frey, Romaric Gaudel, François Taïani"
-          - "Exploring privacy in decentralized learning via noise correlation, from theoretical foundations to practical methods."
+          - "Exploring differential privacy (DP) in decentralized learning via noise correlation, from theoretical foundations to practical methods."
 
       - institution: ENS Rennes
         location: Rennes, France
@@ -66,7 +66,7 @@ cv:
         end_date: present
         summary: "Supervisors: Davide Frey, Romaric Gaudel, François Taïani"
         highlights:
-          - "Conducting research on decentralized learning privacy and collaborating with researchers across multiple institutions."
+          - "Conducting research on differential privacy for decentralized learning and collaborating with researchers across multiple institutions."
 
       - company: "Sacs Lab, EPFL"
         position: Research Intern
@@ -272,6 +272,7 @@ cv:
           - scikit-learn
           - TensorFlow
           - PyTorch
+          - JAX
           - pandas
           - NumPy
 
